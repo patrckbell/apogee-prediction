@@ -25,4 +25,6 @@ $$ds = \frac{v}{-\frac{F_d}{m}-g}dv$$
 \
 Now, if I were to integrate $ds$ from 0 to a height $h$, it would simply return h. This would be equal to the height climbed as the velocity increased from its current velocity ($v_c$) to its velocity at height $h$ ($v_h$).\
 **Therefore**
-$$\(\int_{0}^{h} ds \ \) = \(\int_{v_c}^{v_h} \frac{v}{-\frac{F_d}{m}-g} \,dv\)$$
+$$\int_{0}^{h} ds = \int_{v_c}^{v_h} \frac{v}{-\frac{F_d}{m}-g} dv$$
+\
+By applying this formula to the aforementioned piecewise linear regressions, the drag curve can be split up, allowing for really easy calculations of $F_d$ and therefore $h$. While this isn't perfect it serves well as a quick and easy way to predict a rocket's apogee!!!
