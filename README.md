@@ -7,7 +7,7 @@ Right now, the parameters are all over the place (sorry!!!) You should be able t
 The formulae used throughout this tool were derrived through good ole calculus!
 In this particular instance, I ignored any forces on the rocket besides the gravitational and drag forces.
 **Therefore:**
-$$\left \sum_{} F_n \right = -(mg) - F_d$$
+$$\sum_{} F_n = -(mg) - F_d$$
 
 And since the equation for drag force ($F_d$) **is given by:**
 $$\frac{1}{2} \rho v^2 A C_d$$
@@ -16,8 +16,8 @@ Since $v$ and $C_d$ are codependent, $C_d$ needs to be obtained though math.
 **EW!!!**
 There is hope, however:
 **Since**
-$$\left \sum_{} F_n \right = -(mg) - F_d$$,
-and $$\left \sum_{} F_n \right = ma$$,
+$$\sum_{} F_n = -(mg) - F_d$$,
+and $$\sum_{} F_n = ma$$,
 $$ma = -(mg) - F_d$$
 **Therefore:**
 $$a = -\frac{F_d}{m}-g
