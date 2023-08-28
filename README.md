@@ -1,4 +1,7 @@
-# lin-reg-apogee-prediction
-A tool for quickly predicting the apogee of a rocket, given its drag curve data, through segemented linear regression of the drag curve
+## Welcome!!!!
+This is a simple tool for projecting the apogee of a rocket using its drag curve data. I used [this lovely package by Chasmani](https://github.com/chasmani/piecewise-regression) to segment the drag curve into much more digestable straight lines. My next step is to phase out the use of this plugin in order to speed up the calculations. 
 
-REAL README COMING SOON!!!
+Right now, the parameters are all over the place (sorry!!!) You should be able to change the number of regressions (n) on line 27, the mass of the rocket (m) on line 56, and the height of burnout (height_at_burnout) on line 81. Also, make sure the velocities of your rocket are in the first collumn of your .csv file in a collumn titled Velocities, and your corresponding drag forces are in the second collumn titled Drag.
+
+# Superduper Boring Mathy Explaination
+Coming soon!
