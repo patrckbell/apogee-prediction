@@ -11,8 +11,7 @@ $$\sum_{} F_n = -(mg) - F_d$$
 And since the equation for drag force ($F_d$)\
  **is given by:**
 $$\frac{1}{2} \rho v^2 A C_d$$
-Since $v$ and $C_d$ are codependent, $C_d$ needs to be obtained though math. \
-<p align="center"> ### **EW!!!**</p>\
+Since $v$ and $C_d$ are codependent, $C_d$ needs to be obtained though math.**EW!!!**\
 There is hope, however. **Since**
 $$\sum_{} F_n = -(mg) - F_d$$
 **and** $$\sum_{} F_n = ma$$
