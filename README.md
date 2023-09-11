@@ -1,11 +1,11 @@
 # Welcome!!!!
-This is a simple tool for projecting the apogee of a rocket using its drag curve data. I used [this lovely package by Chasmani](https://github.com/chasmani/piecewise-regression) to segment the drag curve into much more digestable straight lines. My next step is to phase out the use of this plugin in order to speed up the calculations. 
+This is a simple tool for projecting the apogee of a rocket using its drag and thrust curve data. 
 
-Right now, the parameters are all over the place (sorry!!!) You should be able to change the number of regressions (n) on line 27, the mass of the rocket (m) on line 56, and the height of burnout (height_at_burnout) on line 81. Also, make sure the velocities of your rocket are in the first collumn of your .csv file in a collumn titled Velocities, and your corresponding drag forces are in the second collumn titled Drag.
+In order to run the program, a .csv file that tracks the velocity of the rocket against the thrust, drag, and mass of the rocket is required (i.e a thrust curve, drag curve, and mass curve (if thats what its called). The velocity column must be named "Velocity", the mass column "Mass", the thrust column "Thrust", and the drag column "Drag"
 
 ## Superduper Boring Mathy Explaination
 The formulae used throughout this tool were derrived through good ole calculus!\
-In this particular instance, I ignored any forces on the rocket besides the gravitational and drag forces.\
+In this particular instance, any force due to the wind has been ignored (for now).\
 **Therefore:**
 $$\sum_{} F_n = F_t - (mg + F_d)$$
 And since the equation for drag force ($F_d$)\
@@ -27,4 +27,4 @@ Now, if I were to integrate $ds$ from 0 to a height $h$, it would simply return 
 **Therefore**
 $$\int_{0}^{h} ds = \int_{v_c}^{v_h} \frac{v}{\frac{F_t - (mg + F_d)}{m}} dv$$
 \
-By applying this formula to the aforementioned piecewise linear regressions, the drag curve can be split up, allowing for really easy calculations of $F_d$ and therefore $h$. While this isn't perfect it serves well as a quick and easy way to predict a rocket's apogee!!!
+Therefore, given the drag curve, thrust curve, and mass curve of the rocket (thrust and mass can easily be substituted by linear functions as they decrease (somewhat) linearly), the apogee of the rocket can be obtained!!! 
