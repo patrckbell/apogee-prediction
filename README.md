@@ -7,24 +7,24 @@ Right now, the parameters are all over the place (sorry!!!) You should be able t
 The formulae used throughout this tool were derrived through good ole calculus!\
 In this particular instance, I ignored any forces on the rocket besides the gravitational and drag forces.\
 **Therefore:**
-$$\sum_{} F_n = -(mg) - F_d$$
+$$\sum_{} F_n = F_t - (mg + F_d)$$
 And since the equation for drag force ($F_d$)\
  **is given by:**
-$$\frac{1}{2} \rho v^2 A C_d$$
+$$F_d = \frac{1}{2} \rho v^2 A C_d$$
 Since $v$ and $C_d$ are codependent, $C_d$ needs to be obtained though math.**EW!!!**\
 There is hope, however. **Since**
-$$\sum_{} F_n = -(mg) - F_d$$
+$$\sum_{} F_n = F_t - (mg + F_d)$$
 **and** $$\sum_{} F_n = ma$$
-$$ma = -(mg) - F_d$$
+$$ma = F_t - (mg + F_d)$$
 **Therefore:**
-$$a = -\frac{F_d}{m}-g$$
+$$a = \frac{F_t - (mg + F_d)}{m}$$
 also since, as we all (hopefully) know:
 $$v = \frac{ds}{dt}, a = \frac{dv}{dt}$$
 Using all of those fancy lookin equations we can derrive the following equation for $ds$ (the change in height over a given change in velocity $dv$):
-$$ds = \frac{v}{-\frac{F_d}{m}-g}dv$$
+$$ds = \frac{v}{\frac{F_t - (mg + F_d)}{m}}dv$$
 \
 Now, if I were to integrate $ds$ from 0 to a height $h$, it would simply return h. This would be equal to the height climbed as the velocity increased from its current velocity ($v_c$) to its velocity at height $h$ ($v_h$).\
 **Therefore**
-$$\int_{0}^{h} ds = \int_{v_c}^{v_h} \frac{v}{-\frac{F_d}{m}-g} dv$$
+$$\int_{0}^{h} ds = \int_{v_c}^{v_h} \frac{v}{\frac{F_t - (mg + F_d)}{m}} dv$$
 \
 By applying this formula to the aforementioned piecewise linear regressions, the drag curve can be split up, allowing for really easy calculations of $F_d$ and therefore $h$. While this isn't perfect it serves well as a quick and easy way to predict a rocket's apogee!!!
